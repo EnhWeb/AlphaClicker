@@ -6,5 +6,8 @@
 ![image](https://github.com/Half1900/AlphaClicker/assets/149751999/bf331913-80b8-4957-90a8-651718123e62)
 
 
-	新增定位坐标点击后可回到之前的鼠标位置，运行为非后台模式，选获取坐标，再开始。
+	ver 1.0.1 新增定位坐标点击后可回到之前的鼠标位置，运行为非后台模式，选获取坐标，再开始。
 
+
+
+运行环境 .net framework 4.7.2 + 下载地址：<https://go.microsoft.com/fwlink/?LinkId=863262>
