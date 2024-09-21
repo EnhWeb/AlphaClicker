@@ -117,6 +117,11 @@ namespace AlphaClicker
                         lParam = new IntPtr(MAKELONG(X, Y));
 
                     }
+
+                    //var oldPoint = new POINT();
+                    //GetCursorPos(out oldPoint);
+                    //SetCursorPos(X, Y);
+
                     switch (button)
                     {
                         case "左键":
@@ -134,9 +139,14 @@ namespace AlphaClicker
                     }
                     //SendMessage(hWnd, WM_LBUTTONDOWN, IntPtr.Zero, lParam);
                     //SendMessage(hWnd, WM_LBUTTONUP, IntPtr.Zero, lParam);
+
+                    //SetCursorPos(oldPoint.X, oldPoint.Y);
                 }
                 else
                 {
+                    var oldPoint = new POINT();
+                    GetCursorPos(out oldPoint);
+
                     SetCursorPos(X, Y);
                     switch (button)
                     {
@@ -150,6 +160,8 @@ namespace AlphaClicker
                             mouse_event((uint)MOUSEEVENTF.MIDDLEDOWN | (uint)MOUSEEVENTF.MIDDLEUP, 0, 0, 0, 0);
                             break;
                     }
+                    //Thread.Sleep(300);
+                    SetCursorPos(oldPoint.X, oldPoint.Y);
                 }
 
             }

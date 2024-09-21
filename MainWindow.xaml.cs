@@ -312,11 +312,11 @@ namespace AlphaClicker
         }
 
 
-        bool bgModel1 = true;
+        //bool bgModel1 = true;
         private void ChangeState(object sender, RoutedEventArgs e)
         {
            
-            bgModel1 = false;
+            //bgModel1 = false;
             BGModel.IsChecked = false;
         
         }
